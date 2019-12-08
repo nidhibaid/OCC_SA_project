@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="signIn" layoutX="141.0" layoutY="385.0" mnemonicParsing="false" onAction="#onClickSignIn" text="Sign In" />
+      <TextField fx:id="emailTextField" layoutX="152.0" layoutY="288.0" />
+      <Label fx:id="labelEmailID" layoutX="75.0" layoutY="292.0" text="Email ID" />
+      <PasswordField fx:id="passwordTextField" layoutX="153.0" layoutY="322.0" />
+      <Label fx:id="labelPassword" layoutX="75.0" layoutY="326.0" text="Password" />
+      <Hyperlink fx:id="forgotPassword" layoutX="119.0" layoutY="448.0" onAction="#onClickForgotPassword" text="Forgot Password" />
+      <Hyperlink fx:id="reportAProblem" layoutX="117.0" layoutY="471.0" onAction="#onClickReportAProblem" text="Report a Problem" />
+      <Rectangle fx:id="upperPannel" arcHeight="5.0" arcWidth="5.0" fill="#3b804a" height="61.0" stroke="#e2dddd" strokeType="INSIDE" width="335.0" />
+      <Label layoutX="148.0" layoutY="24.0" prefHeight="17.0" prefWidth="38.0" text="Log In" textFill="#f7f5f5" />
+      <Rectangle fx:id="bottomPanel" arcHeight="5.0" arcWidth="5.0" fill="#3b804a" height="61.0" layoutX="1.0" layoutY="539.0" stroke="#e2dddd" strokeType="INSIDE" width="335.0" />
+   </children>
+</AnchorPane>
