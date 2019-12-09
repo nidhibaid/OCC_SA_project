@@ -10,10 +10,10 @@
     <children>
         <Rectangle fx:id="upperPanel" arcHeight="5.0" arcWidth="5.0" fill="#3b804a" height="88.0" stroke="#f7f1f1" strokeType="INSIDE" width="335.0" />
         <Rectangle fx:id="lowerPanel" arcHeight="5.0" arcWidth="5.0" fill="#3b804a" height="40.0" layoutY="560.0" stroke="#f7f1f1" strokeType="INSIDE" width="335.0" />
-        <ImageView fx:id="profilePicture" fitHeight="80.0" fitWidth="80.0" layoutX="20.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="profilePicture" fitHeight="80.0" fitWidth="80.0" layoutX="16.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true" />
         <Button fx:id="sendMessage_btn" layoutX="84.0" layoutY="100.0" mnemonicParsing="false" onAction="#onClickSendMessage" text="Send a Message" />
         <Button fx:id="programInformation_btn" layoutX="198.0" layoutY="100.0" mnemonicParsing="false" onAction="#onClickProgramInformation" text="Program Information" />
-        <Label fx:id="profileInformation_lbl" layoutX="105.0" layoutY="146.0" lineSpacing="1.0" prefHeight="96.0" prefWidth="214.0" />
+        <Label fx:id="profileInformation_lbl" layoutX="100.0" layoutY="146.0" lineSpacing="1.0" prefHeight="96.0" prefWidth="230.0" />
         <Label fx:id="sceneLabel" layoutX="117.0" layoutY="54.0" prefHeight="20.0" prefWidth="102.0" text="Program Leader" textFill="#f8f4f4">
             <font>
                 <Font size="14.0" />

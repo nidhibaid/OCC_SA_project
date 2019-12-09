@@ -1,13 +1,21 @@
 package sample;
 
+import connectivity.ConnectionClass;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
 
 
@@ -82,7 +90,13 @@ public class ProgramLeaderCntrl {
     public void onClickEditProgInfo_btn(ActionEvent actionEvent) {
     }
 
-    public void onClickCreateEvent_btn(ActionEvent actionEvent) {
+    public void onClickCreateEvent_btn(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("sample/Create_Event_gui.fxml"));
+        AnchorPane root = (AnchorPane) loader.load();
+        CreateEventCtrl createEventCtrl = loader.getController();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 
     public void onClickSAReport_btn(ActionEvent actionEvent) {

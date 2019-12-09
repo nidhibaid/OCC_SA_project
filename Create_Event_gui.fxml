@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateEventCtrl">
+   <children>
+      <Rectangle fx:id="upperPanel" arcHeight="5.0" arcWidth="5.0" fill="#3b804a" height="88.0" layoutY="-1.0" stroke="#f7f1f1" strokeType="INSIDE" width="335.0" />
+      <Rectangle fx:id="upperPanel1" arcHeight="5.0" arcWidth="5.0" fill="#3b804a" height="32.0" layoutY="570.0" stroke="#f7f1f1" strokeType="INSIDE" width="335.0" />
+      <Label fx:id="eventID_lbl" layoutX="32.0" layoutY="139.0" prefHeight="17.0" prefWidth="51.0" text="Event ID" />
+      <Label fx:id="eventName_lbl" layoutX="31.0" layoutY="173.0" prefHeight="17.0" prefWidth="78.0" text="Event Name" />
+      <Label fx:id="eventLocation_lbl" layoutX="31.0" layoutY="205.0" prefHeight="17.0" prefWidth="78.0" text="Event Location" />
+      <Label fx:id="eventDate_lbl" layoutX="32.0" layoutY="240.0" prefHeight="17.0" prefWidth="65.0" text="Event Date" />
+      <Label fx:id="eventTime_lbl" layoutX="32.0" layoutY="275.0" prefHeight="17.0" prefWidth="65.0" text="Event Time" />
+      <Label fx:id="contactPerson_lbl" layoutX="32.0" layoutY="310.0" prefHeight="17.0" prefWidth="85.0" text="Contact Person" />
+      <Label fx:id="contactNumber_lbl" layoutX="33.0" layoutY="345.0" prefHeight="17.0" prefWidth="96.0" text="Contact Number" />
+      <Label fx:id="eventDescription_lbl" layoutX="33.0" layoutY="385.0" prefHeight="17.0" prefWidth="96.0" text="Event Description" />
+      <TextArea fx:id="eventDescription_txt" layoutX="142.0" layoutY="376.0" prefHeight="126.0" prefWidth="149.0" />
+      <TextField fx:id="contactNumber_txt" layoutX="142.0" layoutY="341.0" />
+      <TextField fx:id="contactPerson_txt" layoutX="142.0" layoutY="306.0" />
+      <TextField fx:id="eventTime_txt" layoutX="142.0" layoutY="271.0" />
+      <TextField fx:id="eventDate_txt" layoutX="142.0" layoutY="236.0" />
+      <TextField fx:id="eventLocation_txt" layoutX="142.0" layoutY="201.0" />
+      <TextField fx:id="eventName_txt" layoutX="142.0" layoutY="169.0" />
+      <TextField fx:id="eventID_txt" layoutX="142.0" layoutY="135.0" />
+      <Button fx:id="createEvent_Btn" layoutX="56.0" layoutY="518.0" mnemonicParsing="false" onAction="#onClickCreateEvent_btn" text="Create Event" />
+      <Label layoutX="129.0" layoutY="58.0" prefHeight="17.0" prefWidth="83.0" text="Create Event" textFill="#f8f6f6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="goBackToProfile_btn" layoutX="155.0" layoutY="518.0" mnemonicParsing="false" onAction="#onClickgoBack_btn" text="Go back to profile " />
+   </children>
+</AnchorPane>

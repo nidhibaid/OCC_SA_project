@@ -69,6 +69,7 @@ public class studentAmbassadorCntrl {
     }
 
     public void onClickProgramInformation(javafx.event.ActionEvent actionEvent) {
+
     }
 
     public void onClickDownloadEventLog_btn(javafx.event.ActionEvent actionEvent) {
